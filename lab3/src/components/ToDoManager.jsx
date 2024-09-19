@@ -14,11 +14,15 @@ function ToDoManager() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (newToDo.title) {
-      setToDos([...toDos, { id: new Date().getTime(), title: newToDo.title }]);
-      setNewToDo({ title: '' });
+    if (!newToDo.title.trim()) {
+      setError('Назва задачі не може бути порожньою');
+      return;
     }
+      setToDos([...toDos, { id: Date.now(), title: newToDo.title }]);
+      setNewToDo({ title: '' });
+
   }
+
 
   function handleDelete(id) {
     setToDos(toDos.filter(toDo => toDo.id !== id));
