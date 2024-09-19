@@ -3,6 +3,7 @@ import './App.css';
 import AddToDOComponent from './components/AddToDoComponent';
 import ToDoTable from './components/ToDoTable';
 import SearchInput from './components/SearchInput';
+import PageTitle from './components/PageTitle';
 
 function App() {
   const [toDos, setToDos] = useState([]);
@@ -35,6 +36,8 @@ function App() {
 
   return (
     <>
+       <PageTitle title="Мій список задач" />
+
       <SearchInput searchValue={searchTerm} onSearchChange={handleSearchChange} />
       <AddToDOComponent
         title={newToDo.title}
