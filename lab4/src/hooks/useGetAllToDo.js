@@ -20,11 +20,13 @@ const useGetAllToDo = () => {
                 setIsLoading(false);
             }
         };
+        const timeoutId = setTimeout(() => {
+            fetchData();
+        }, 1000);
 
-        fetchData();
+        return () => clearTimeout(timeoutId);
     }, []);
-
-    return { isLoading, data, error };
+    return { isLoading, data, setData, error };
 };
 
 export default useGetAllToDo;

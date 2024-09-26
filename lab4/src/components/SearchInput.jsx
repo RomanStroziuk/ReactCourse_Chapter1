@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
 const SearchInput = ({ searchValue, onSearchChange }) => {
-  return (
-    <input
-      type="text"
-      placeholder="Search by title"
-      value={searchValue}
-      onChange={onSearchChange}
-    />
-  );
-};
+    return (
+        <input
+            type="text"
+            placeholder="Search by title"
+            value={searchValue}
+            onChange={onSearchChange}
+        />
+    )
+}
 
-export default SearchInput;
+export default SearchInput

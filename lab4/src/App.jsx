@@ -1,6 +1,6 @@
-import React from 'react';
-import PageTitle from './components/PageTitle';
-import ToDoManager from './components/ToDoManager';
+import React from 'react'
+import PageTitle from './components/PageTitle'
+import ToDoManager from './components/ToDoManager'
 
 function App() {
     return (
@@ -8,7 +8,7 @@ function App() {
             <PageTitle title="Мій список задач" />
             <ToDoManager />
         </>
-    );
+    )
 }
 
-export default App;
+export default App
