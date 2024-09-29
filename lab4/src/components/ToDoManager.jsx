@@ -6,7 +6,6 @@ import useGetAllToDo from '../hooks/useGetAllToDo'
 
 function ToDoManager() {
     const { isLoading, data: toDos, setData: setToDos, error } = useGetAllToDo()
-
     const [newToDo, setNewToDo] = useState({ title: '' })
     const [searchTerm, setSearchTerm] = useState('')
 
