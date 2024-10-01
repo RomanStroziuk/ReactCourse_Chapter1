@@ -1,0 +1,40 @@
+.icon {
+    width: 1.25rem; /* 20px в rem */
+    height: 1.25rem; /* 20px в rem */
+    margin-right: 0.5rem; /* Зменшили відступ */
+    vertical-align: middle; /* Вирівнювання по центру */
+    transition: transform 0.2s ease, filter 0.2s ease; /* Додаємо ефект переходу */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Збільшуємо розмір при наведенні */
+    filter: brightness(0.8); /* Трохи затемнюємо іконку */
+}
+
+
+
+.add-button {
+    padding: 10px 15px; /* Внутрішні відступи кнопки */
+    background-color: #28a745; /* Зелений фон */
+    color: white; /* Білий текст */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Закруглення кутів */
+    cursor: pointer; /* Курсор у вигляді руки */
+    font-size: 16px; /* Розмір шрифту */
+    transition: background-color 0.3s; /* Плавний перехід кольору фону */
+}
+
+.add-button:hover {
+    background-color: #218838; /* Темніший зелений при наведенні */
+}
+
+
+.delete {
+    background-color: red; /* Червоний фон */
+    cursor: pointer; /* Курсор у вигляді руки */
+}
+
+/* Зміна кольору кнопки при наведенні */
+.delete:hover {
+    background-color: rgb(190, 11, 11); /* Темніший червоний при наведенні */
+}
