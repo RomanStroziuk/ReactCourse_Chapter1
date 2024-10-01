@@ -5,7 +5,7 @@ const DeleteButton = ({ onClick }) => {
     return (
         <button onClick={onClick} className="delete">
             <img
-                src="/assets/icons/delete-icon.png"
+                src="/public/delete-icon.png"
                 alt="Delete"
                 className="icon"
             />

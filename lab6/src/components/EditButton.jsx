@@ -5,7 +5,7 @@ const EditButton = ({ isEditing, onClick }) => {
     return (
         <button onClick={onClick}>
             <img
-                src={isEditing ? "/assets/icons/save-icon.png" : "/assets/icons/edit-icon.png"}
+                src={isEditing ? "/public/save-icon.png" : "/public/edit-icon.png"}
                 alt={isEditing ? "Save" : "Edit"}
                 className="icon"
             />
