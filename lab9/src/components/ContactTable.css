@@ -1,0 +1,39 @@
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .contact-table th,
+  .contact-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .contact-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+
+  
+  .edit-button,
+  .delete-button,
+  .save-button {
+    background-color: #008CBA; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover,
+  .save-button:hover {
+    background-color: #005f73;
+  }
+  
